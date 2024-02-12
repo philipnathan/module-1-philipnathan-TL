@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container-header {
+                display: flex;
+            }
+            .navbar li,
+            .navbar2 li {
+                display: inline;
+            }
+            .logo,
+            .navbar,
+            .navbar2 {
+                text-align: center;
+            }
+            .navbar,
+            .logo,
+            .navbar2 {
+                flex: 1;
+            }
+            footer {
+                display: flex;
+            }
+            .footer-newsletter,
+            .footer-question {
+                flex: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container-header">
+                <div class="navbar">
+                    <nav class="navbar">
+                        <ul>
+                            <li>Home 1</li>
+                            <li>Home 2</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="logo">
+                    <figure>
+                        <img src="./logo.png" alt="logo" width="100em" />
+                    </figure>
+                </div>
+
+                <div class="navbar2">
+                    <nav class="navbar2">
+                        <ul>
+                            <li>Home 3</li>
+                            <li>Home 4</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <p>asdasd</p>
+        </main>
+
+        <footer>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>
+                    Stay ahead of the curve with exclusive insights into Bali!
+                    Subscribe to our newsletter to uncover hidden treasures,
+                    insider knowledge, and exclusive deals that will elevate
+                    your Bali experience to new heights.
+                </p>
+                <form method="post">
+                    <select name="" id="newsletter-title" required>
+                        <option disabled selected value>--Title--</option>
+                        <option value="mr">Mr.</option>
+                        <option value="mrs">Mrs.</option>
+                        <option value="ms">Ms.</option>
+                    </select>
+                    <input
+                        type="text"
+                        id="newsletter-first-name"
+                        placeholder="First name"
+                        required
+                    />
+                    <input
+                        type="text"
+                        id="newsletter-last-name"
+                        placeholder="Last name"
+                        required
+                    />
+                    <input
+                        type="email"
+                        id="newsletter-email"
+                        placeholder="Email"
+                        required
+                    />
+                    <input type="submit" />
+                </form>
+            </div>
+
+            <div class="footer-question">
+                <h4>Question</h4>
+                <p>
+                    Get personalized quotes tailored to your Bali experience –
+                    inquire now for pricing details and start planning your
+                    dream getaway!
+                </p>
+                <form method="post">
+                    <select name="" id="question-title" required>
+                        <option disabled selected value>--Title--</option>
+                        <option value="mr">Mr.</option>
+                        <option value="mrs">Mrs.</option>
+                        <option value="ms">Ms.</option>
+                    </select>
+                    <input
+                        type="text"
+                        id="question-name"
+                        placeholder="Your Name"
+                        required
+                    />
+                    <input
+                        type="email"
+                        id="question-email"
+                        placeholder="Email"
+                        required
+                    />
+                    <br />
+                    <textarea
+                        name="quotes"
+                        id="question-plans"
+                        cols="30"
+                        rows="10"
+                        placeholder="Please explain your plans or question. E.g. Number of travellers, duration, travel dates, level of accommodation"
+                        required
+                    ></textarea>
+                    <input type="submit" />
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>
